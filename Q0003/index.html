@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <title>Web Title</title>
+    <link rel="stylesheet" href="asset/style/style.css">
+</head>
+
+<body>
+    <h2>Nested Collapsible Form</h2>   
+    <form action="/submit-form" method="post">
+        <div id="collapsibleContainer">
+            <!-- Collapsible sections will be dynamically generated here -->
+        </div>  
+    
+      <div class="collapsible" id="collapsibleContainer">
+        <div class="collapsible-header" onclick="toggleCollapsible('content2')">Label for Option 2</div>
+        <div class="collapsible-content" id="content2">
+          Additional content for Option 2. This can include text, images, or any other HTML content.
+        </div>
+      </div>
+    
+      <div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible('content3')">Label for Option 3</div>
+        <div class="collapsible-content" id="content3">
+          Additional content for Option 3. This can include text, images, or any other HTML content.
+        </div>
+      </div>
+    
+      <!-- Add more collapsible sections as needed -->
+    
+      <button type="submit">Submit</button>
+    </form>
+    </body>
+
+<footer>
+    <p>&copy; 2023 copyrightt</p>
+</footer>
+<script src="asset/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #000;
+    overflow-y: auto;
+    color: #f0f0f0;
+    padding-top: 300px;
+}
+
+.content {
+    width: 80%;
+    background-color: #e0e0e0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the menu items */
+.menu-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style for the active menu item */
+.active {
+    background-color: #ccc;
+}
+
+.header {
+    background-color: #474747;
+
+    h1 {
+        font-size: 64px;
+        color:#f0f0f0;
+        margin-bottom: 1px;
+    }
+
+    h4 {
+        font-size: 16px;
+        color:#f0f0f0;
+        margin-top: 1px;
+    }
+}
+
+/* Style for the content sections */
+.content-section {
+    display: none;
+    flex-grow: 1;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Style for the sub-content sections */
+.sub-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sub-content-section {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+/* Style for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.qr-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}

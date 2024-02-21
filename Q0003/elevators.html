@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <title>Web Title</title>
+    <link rel="stylesheet" href="asset/style/dashboard.css">
+</head>
+<div class="sub-content">
+    <div class="sub-content-section header" id="elevators">
+        <h1>Elevators</h1>
+        <h4>Dashboard</h4>
+        <button class="qr-btn" id="showQRCodeBtn"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="34" height="34" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1_191" transform="scale(0.0111111)"/>
+            </pattern>
+            <image id="image0_1_191" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB5klEQVR4nO2bTU7DMBBGs4LeAe5Sab5NL9Bb0HJLflaUo6CyD4oIEgsSNcUTe+z3pOxc5/PrxG2TTtcBAAAAAAAAAEC33W43ZvYo6dXMPiX1Sw77fs2LpONut7ttPedU+HtJ70tDa/o4DXO2mnMq/CZx+P5nESkrJkrOScbLsHc6Dq3lnGTY67wWYGbPreWcW8DZsVLOreWcW8CfJ/eeR87jvedZDKKF6OYqOtUY7/EeOZOBaCH6N1T0SpckokcQXUmlKEjOfy1gzXmi53Q/sRCN6FIq2u1mjZl9JPzBkiVnF/32o5aLDn+b9Oi4gIeEorPkTMbwGGd4nOMQ/m2/39+kEp0rp8dDz1PK8GZ2N3fOpaJz5UzOWDGHYb+68oPnbGZPw2V4SYVcIzpHTgAAAIBKWPr1S8HHZ6M0EUJ0meKo6BFEFypCVHSZ4sJsHbkQbwCiq0JUNKKrQlQ0okN2pKrFys3RkarWROfqSFVronN1pKo10YH+EtZHF52lI1UNik4SSJnmCfMGIFqIVmsVnWrMJTS9dSA6AYhW3RWtwsa7g+iVQPRK1PptQRG3Do95VNh4dxC9EqV1pCp65UbpSFXFoovqSFWtokvrSFWtokvrSFXNokvqSFXtogEAAAAAAAAAuvL4AqLKjriaTHvGAAAAAElFTkSuQmCC"/>
+            </defs>
+            </svg>
+            Show QR Code
+        </button>
+    </div>
+    <div class="sub-content-section" id="elevators">
+        <button>Add Elevator</button>
+        <button>My Elevator</button>
+    </div>    
+</div>
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="asset/images/QR.svg" alt="QR Code">
+    </div>
+  </div>
+<script src="asset/js/dashboard.js"></script>
+</html>
+
